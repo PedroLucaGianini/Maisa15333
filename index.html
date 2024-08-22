@@ -1,0 +1,72 @@
+"<!DOCTYPE html>
+<html lang="pt-br">
+</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Luca 2°info2</title>
+<style>
+     body {
+     font-family: Arial, Helvetica, sans-serif;
+     text-align: center;
+     margin: 50px;
+     background-image: url(fundopedro.jpg)
+     background-size: cover;
+     background-position: center;
+    
+    }
+     nomeInput {
+        padding:10px;
+        font-size:16px;
+     }
+     button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+       cursor: pointer; 
+       background-color: rgb(50,143,198),263,44)
+       color:brown;
+       border: none;
+       border-radius: 5px;
+      transition: background-color 0.3 ease,transforma 0.2ease;
+        cursor: pointer;
+        
+       
+     }
+     button:hover {
+      background-color: rgb(45,52,255);
+      transform:scale(1.05);
+     }
+     #exibirNome{
+      margin-top: 20px;
+      font-size: 100px;
+      color: brown;
+     }
+</style>
+</head>
+   <body>
+      <h1>Pedro Luca Batista Gianini</h1>
+      <h2>Digite seu nome:</h2><h2>
+         <input type="text" id="nomeInput"placehoulder="Seu nome">
+     <button onclick="exibirNome()">Exibir Nome</button>
+     <div id="exibirNome"></div>
+   <script>
+      function exibirNome() {
+         var nome = document.getElementById("nomeInput").value;
+         var mensagem = "olá," + nome + "!";
+         document.getElementById("exibirNome").innerText = mensagem;
+      }
+      </script>
+
+</body>
+</html>
+
+
+
+
+     }
+
+
+     
+
+
+
